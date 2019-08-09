@@ -1,0 +1,97 @@
+<div class="page-header" data-parallax="true" style="background-image: url('https://learningspaces.ubc.ca/sites/learningspaces.ubc.ca/files/styles/room_images/public/classroom-images/MCLD%20220.JPG?itok=v4WIYMWQ&c=46fa2529ee97ff9f82a833771ba8b390');">
+  <div class="filter"></div>
+  <div class="container">
+      <div class="motto text-center">
+          <h1>MCLD 220</h1>
+      </div>
+  </div>
+</div>
+<div class="main">
+  <div class="section text-center">
+  <div class="container" style="max-width: 1500px">
+    <div class="row">
+      <div class="col-md-8 mr-auto ml-auto">
+        <h2 class="title">Real Time Room Info</h2>
+      </div>
+    </div>
+    <br/><br/>
+    <div class="row" style="justify-content: space-between; margin-left: 60px; margin-right: 80px">
+      <div class="info" style="background: whitesmoke; width: 580px; height: 300px; box-shadow: 0px 0px 10px lightgray; padding: 1rem; text-align: left">
+        <h3>Room</h3>
+        <br/>
+        <label style="margin-right: 1em; font-weight: bold">Occupied</label>
+        <label (occupied)="occupied">{{occupied}}</label>
+        <label style="margin-right: 1em; margin-left: 2em; font-weight: bold">Max Occupancy</label>
+        <label>40</label>
+        <label style="margin-right: 1em;  margin-left: 2em; font-weight: bold">Seating</label>
+        <label>30</label>
+        <label style="margin-right: 1em;  margin-left: 2em; font-weight: bold">Size</label>
+        <label>500 sqft</label>
+        <br/>
+        <br/>
+        <label style="font-weight: bold">Other Details</label>
+        <br/>
+        <label style="overflow-wrap: break-word; padding-right: 20px">
+        This rooms amenities include: a multimedia projector, monitor, projector, windows pc, multiple media playback devices and full AV system.
+        In addition, this room also contains several whiteboards.
+        </label>
+      </div>
+      <div class="col-md-4" style="padding-top: 40px">
+        <ngx-gauge 
+          [type]="gaugeType" 
+          [value]="gaugeValue" 
+          [label]="gaugeLabel"  
+          [append]="gaugeAppendText"
+          [thick]="gaugeThickness"
+          [size]="guageSize"
+          [min]="gaugeMin"
+          [max]="guageMax"
+          [cap]="guageCap"
+        >
+        </ngx-gauge>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section text-center">
+  <div class="container" style="max-width: 1500px">
+    <div class="row" style="justify-content: space-between">
+      <div>
+        <div class="info text-center">
+          <h3>Light Level</h3>
+          <br/>
+          <fusioncharts
+            width="650"
+            height="400"
+            type="scrollarea2d"
+            [dataSource]=lightDataSource>
+          </fusioncharts>
+        </div>
+      </div>
+      <div>
+        <div class="info text-center">
+          <h3>Sound Level</h3>
+          <br/>
+          <fusioncharts
+            width="650"
+            height="400"
+            type="scrollarea2d"
+            scrollToEnd="1"
+            theme="ocean"
+            [dataSource]=soundDataSource>
+          </fusioncharts>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-dark text-center">
+  <div class="container">
+      <h2 class="title">Room Schedule UBC Vancouver</h2>
+      <button (click)="sendMsg()">Send Message</button>
+      <a class="btn btn-info btn-round" href="https://sws.students.ubc.ca/van_2019/default.aspx " target="_blank" style="width: 20vw;">Details</a>
+  </div>
+</div>
+
+</div>
