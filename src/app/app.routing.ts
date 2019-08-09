@@ -10,7 +10,7 @@ import { RoomListComponent } from  './pages/room-list/room-list.component'
 import { RoomComponent } from './pages/room/room.component';
 
 const routes: Routes =[
-    { path: '', redirectTo: 'test', pathMatch: 'full' },
+    { path: '', redirectTo: 'landing', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'room-list',        component: RoomListComponent},
