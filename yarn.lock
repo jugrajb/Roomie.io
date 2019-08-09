@@ -4354,6 +4354,12 @@ ng2-nouislider@1.7.12:
   version "1.7.12"
   resolved "https://registry.yarnpkg.com/ng2-nouislider/-/ng2-nouislider-1.7.12.tgz#874640463bd464ce2eeb442bfd650259f90102e2"
 
+ngx-gauge@^1.0.0-beta.10:
+  version "1.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/ngx-gauge/-/ngx-gauge-1.0.0-beta.10.tgz#766a66513230a598f85e472858ba57cc6929cc5e"
+  dependencies:
+    tslib "^1.9.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
